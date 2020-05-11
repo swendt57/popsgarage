@@ -2,7 +2,7 @@ import {Switch, Route} from "react-router-dom";
 import React from "react";
 
 import Home from '../containers/Home';
-// import Showroom from '../containers/Showroom';
+import Showroom from '../containers/Showroom';
 import TireKicking from '../containers/TireKicking';
 // import Livery from '../containers/Livery';
 // import Links from '../containers/Links';
@@ -21,7 +21,7 @@ const Routes = () => {
     return (
         <Switch>
             <Route path="/" component={Home} exact={true}/>
-            {/*<Route path="/showroom" component={Showroom}/>*/}
+            <Route path="/showroom" component={Showroom}/>
             <Route path="/tire_kicking" component={TireKicking}/>
             {/*<Route path="/livery" component={Livery}/>*/}
             {/*<Route path="/library" component={Library}/>*/}

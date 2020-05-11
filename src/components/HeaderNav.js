@@ -43,9 +43,9 @@ const HeaderNav = props => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link>
                                 </Nav.Item>
-                                {/*<Nav.Item>*/}
-                                {/*    <Nav.Link eventKey="2" as={Link} to="showroom">Showroom</Nav.Link>*/}
-                                {/*</Nav.Item>*/}
+                                <Nav.Item>
+                                    <Nav.Link eventKey="2" as={Link} to="showroom">Showroom</Nav.Link>
+                                </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="3" as={Link} to="tire_kicking">Tire Kicking</Nav.Link>
                                 </Nav.Item>
