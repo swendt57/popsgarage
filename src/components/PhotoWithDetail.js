@@ -7,7 +7,7 @@ const PhotoWithDetail = props => {
                     <React.Fragment>
                         <tr>
                             <td className="photo-detail-td" >
-                                <p className={props.container_class_name}><img
+                                <p><img
                                     src={`${window.location.origin}/assets/images/${props.image_folder}/${props.image_name}`}
                                     className={props.image_class_name} alt={props.alt_text + props.title}/> {props.link ?
                                     <a href={window.location.origin + "/" + props.link}><strong>{props.title}</strong></a> :
@@ -16,7 +16,7 @@ const PhotoWithDetail = props => {
                             </td>
                         </tr>
                         <tr>
-                            <td className="photo-detail-td">
+                            <td className="hr-style">
                                 <hr/>
                             </td>
                         </tr>

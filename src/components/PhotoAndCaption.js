@@ -2,22 +2,28 @@ import React from "react";
 
 const PhotoAndCaption = props => {
 
-    return ( <div className="table">
-            <div className="row">
-                <div className="col text-center"><img src={`${window.location.origin}/assets/images/${props.image_folder}/${props.image_name}`}
+    return ( <table className="table">
+            <tbody>
+            <tr>
+                <td className="photo-caption-td text-center"><img src={`${window.location.origin}/assets/images/${props.image_folder}/${props.image_name}`}
                                           className={props.class_name}
                                           alt={props.alt_text + props.title} />
-                </div>
-            </div>
-            <div className="row">
-                <div className="col">
+                </td>
+            </tr>
+            <tr>
+                <td className="photo-caption-td">
                     <h2 className="text-center">{props.title}</h2>
                     <p>{props.description}</p>
-                </div>
-            </div>
+                </td>
+            </tr>
+            <tr>
+                <td className="hr-style">
+                    <hr/>
+                </td>
+            </tr>
 
-            <hr/>
-        </div>
+            </tbody>
+        </table>
     )
 }
 

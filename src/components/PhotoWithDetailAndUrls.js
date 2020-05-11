@@ -16,7 +16,7 @@ const PhotoWithDetailAndUrls = props => {
                             </td>
                         </tr>
                         <tr>
-                            <td className="photo-detail-td">
+                            <td className="hr-style">
                                 <hr/>
                             </td>
                         </tr>

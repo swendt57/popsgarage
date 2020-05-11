@@ -42,8 +42,8 @@ class Showroom extends Component {
         return (
             <section>
 
-                <Alert variant="danger">
-                    <p>We are updating the detail pages in the Showroom. Thank you for your patience!</p>
+                <Alert key={"anything"} variant="danger">
+                    <p><strong>Coming Soon:</strong> New model information and links for the Showroom detail pages!</p>
                 </Alert>
 
                 <h1>Showroom</h1>
