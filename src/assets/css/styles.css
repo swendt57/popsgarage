@@ -24,6 +24,7 @@ section {
     width: 90vw;
     padding-top: 15px;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 /* BS OR */
@@ -85,7 +86,7 @@ p {
 
 hr {
     border: 1px solid #aaa;
-    margin: 10px auto 10px;
+    margin: 10px auto 20px;
 }
 
 td.hr-style {
@@ -190,6 +191,14 @@ td.photo-caption-td {
 
     aside {
         font-size: .95rem;
+    }
+
+    .two-column {
+        column-count: 2;
+        column-gap: 35px;
+        column-rule-style: solid;
+        column-rule-color: #ccc;
+        text-align: justify;
     }
 }
 
