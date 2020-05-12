@@ -2,8 +2,6 @@ import React, {Component} from "react";
 
 import PhotoWithDetail from "../components/PhotoWithDetail";
 
-import $ from "jquery";
-
 function assembleData() {
     let data = require("../assets/data/tire_kicking.json");
 

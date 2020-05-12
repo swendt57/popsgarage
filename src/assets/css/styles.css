@@ -104,6 +104,10 @@ td.photo-caption-td {
     border-top: 0;
 }
 
+.alert {
+    position: unset; /* otherwise the alert scrolls on top of the header */
+}
+
 .alert p {
     margin-top: 5px;
     text-align: center;
