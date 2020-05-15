@@ -60,6 +60,10 @@ class Links extends Component {
         dataLength = this.state.linksData.length;
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render () {
         return (
             <section>

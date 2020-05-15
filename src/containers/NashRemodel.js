@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import SinglePhoto from "../components/SinglePhoto";
+import $ from "jquery";
 
 function assembleData() {
     let data = require("../assets/data/nash_remodel.json");
@@ -22,6 +23,10 @@ class NashRemodel extends Component {
         this.state = {
             nashData: assembleData()
         }
+    }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
 
     render () {

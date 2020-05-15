@@ -47,6 +47,10 @@ class Showroom extends Component {
         dataLength = this.state.showroomData.length;
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render () {
         return (
             <section>

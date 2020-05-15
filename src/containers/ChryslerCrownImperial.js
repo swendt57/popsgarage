@@ -1,7 +1,12 @@
 import React from "react";
 import Story from "../components/Story";
+import $ from "jquery";
 
 const ChryslerCrownImperial = () => {
+
+    $(document).ready(
+        window.scrollTo(0, 0)
+    )
 
     const mainText =
         <React.Fragment>

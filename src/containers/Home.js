@@ -2,6 +2,11 @@ import React from "react";
 import {Link} from 'react-router-dom'
 
 import nash59 from '../assets/images/59NashSWagon3.jpg';
+import $ from "jquery";
+
+$(document).ready(
+    window.scrollTo(0, 0)
+)
 
 const Home = () => {
 

@@ -95,6 +95,14 @@ p {
     margin-bottom: 10px;
 }
 
+a {
+    color: #181cb3;
+}
+
+a:hover {
+    color: #d9112d;
+}
+
 hr {
     border: 1px solid #aaa;
     margin: 10px auto 20px;
@@ -643,7 +651,7 @@ footer a:hover {
 footer hr {
     max-width: 80vw;
     margin: 0 auto 10px;
-    border-color: #181cb3;
+    border-color: rgba(24, 28, 179, 0.5);
 }
 
 /* styles for tablet */
