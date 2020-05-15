@@ -1,6 +1,5 @@
 import React from "react";
 
-import $ from 'jquery';
 import {Link} from "react-router-dom";
 
 const Footer = props => {
@@ -8,20 +7,20 @@ const Footer = props => {
     return (
         <footer>
             <div className="container text-center" style={{maxWidth: "80vw"}}>
-                <p>
                 <hr/>
+                <p>
                 <strong>
                     <Link to="/">Home </Link>
                     |&nbsp;
-                    <Link to="showroom">Showroom</Link>
+                    <Link to="/showroom">Showroom</Link>
                     |&nbsp;
-                    <Link to="tire_kicking">Tire&nbsp;Kicking </Link>
+                    <Link to="/tire_kicking">Tire&nbsp;Kicking </Link>
                     |&nbsp;
-                    <Link to="livery">The&nbsp;Livery </Link>
+                    <Link to="/livery">The&nbsp;Livery </Link>
                     |&nbsp;
-                    <Link to="links">Links </Link>
+                    <Link to="/links">Links </Link>
                     |&nbsp;
-                    <Link to="library">The&nbsp;Library </Link>
+                    <Link to="/library">The&nbsp;Library </Link>
                     |&nbsp;
                     <span>Site&nbsp;Map </span>
                     |&nbsp;

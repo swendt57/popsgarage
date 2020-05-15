@@ -637,6 +637,10 @@ footer {
     font-size: .75rem;
     padding: 0;
     margin: 20px auto;
+    /*position: relative;*/
+
+    display: flex;
+    align-content: flex-end;
 }
 
 footer a {

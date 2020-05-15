@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 
 import SinglePhoto from "../components/SinglePhoto";
-import $ from "jquery";
 
 function assembleData() {
     let data = require("../assets/data/nash_remodel.json");

@@ -7,7 +7,7 @@ function assembleData() {
     let data = require("../assets/data/showroom.json");
 
     let showroomArray = [];
-    Object.keys(data).forEach(function(key) {
+    Object.keys(data).forEach(function (key) {
         showroomArray.push(data[key]);
     });
 
@@ -30,7 +30,7 @@ function getDetailCode(item) {
                          alt_text="A sample model from: "
                          data_length={dataLength}
                          index={masterIndex}
-                         />
+        />
     )
 }
 
@@ -51,7 +51,7 @@ class Showroom extends Component {
         window.scrollTo(0, 0);
     }
 
-    render () {
+    render() {
         return (
             <section>
 
@@ -64,53 +64,35 @@ class Showroom extends Component {
                 <div className="container">
 
                     <h2>The Independents</h2>
-
                     <hr/>
-
-                    <table className="table">
-                        <tbody>
 
                     {this.state.showroomData.map(item => {
                         return item.category === "independents" ?
                             getDetailCode(item)
-                        :
+                            :
                             ""
                     })}
 
-                </tbody>
-            </table>
-
                     <h2>Hearses</h2>
-
                     <hr/>
-
-                    <table className="table">
-                        <tbody>
 
                     {this.state.showroomData.map(item => {
                         return item.category === "hearses" ?
                             getDetailCode(item)
-                        :
+                            :
                             ""
                     })}
-    </tbody>
-    </table>
-                    <h2>Limousines</h2>
 
+                    <h2>Limousines</h2>
                     <hr/>
 
-                    <table className="table">
-                        <tbody>
-
                     {this.state.showroomData.map((item, index) => {
-                        return  item.category === "limousines" ?
+                        return item.category === "limousines" ?
                             getDetailCode(item, item.index)
-                        :
+                            :
                             ""
                     })}
 
-    </tbody>
-    </table>
                 </div>
 
             </section>

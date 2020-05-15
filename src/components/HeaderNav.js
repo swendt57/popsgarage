@@ -44,19 +44,19 @@ const HeaderNav = props => {
                                     <Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="2" as={Link} to="showroom">Showroom</Nav.Link>
+                                    <Nav.Link eventKey="2" as={Link} to="/showroom">Showroom</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="3" as={Link} to="tire_kicking">Tire Kicking</Nav.Link>
+                                    <Nav.Link eventKey="3" as={Link} to="/tire_kicking">Tire Kicking</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="4" as={Link} to="livery">The Livery</Nav.Link>
+                                    <Nav.Link eventKey="4" as={Link} to="/livery">The Livery</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="5" as={Link} to="links">Links</Nav.Link>
+                                    <Nav.Link eventKey="5" as={Link} to="/links">Links</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="6" as={Link} to="library">The Library</Nav.Link>
+                                    <Nav.Link eventKey="6" as={Link} to="/library">The Library</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>

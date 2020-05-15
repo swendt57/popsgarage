@@ -22,18 +22,18 @@ const Routes = () => {
         <Switch>
             <Route path="/" component={Home} exact={true}/>
             <Route path="/showroom" component={Showroom}/>
-            <Route path="/tire_kicking" component={TireKicking}/>
-            <Route path="/livery" component={Livery}/>
+            <Route path="/tire_kicking" component={TireKicking} exact={true}/>
+            <Route path="/livery" component={Livery} exact={true}/>
             <Route path="/library" component={Library}/>
             <Route path="/links" component={Links}/>
-            <Route path="/metropolitan_story" component={MetropolitanStory}/>
-            <Route path="/nash_rambler" component={NashRambler}/>
-            <Route path="/land_cruiser" component={LandCruiser}/>
-            <Route path="/beep_beep" component={BeepBeep}/>
-            <Route path="/calendar_art" component={CalendarArt}/>
+            <Route path="/tire_kicking/metropolitan_story" component={MetropolitanStory}/>
+            <Route path="/tire_kicking/nash_rambler" component={NashRambler}/>
+            <Route path="/tire_kicking/land_cruiser" component={LandCruiser}/>
+            <Route path="/tire_kicking/beep_beep" component={BeepBeep}/>
+            <Route path="/tire_kicking/calendar_art" component={CalendarArt}/>
             <Route path="/nash_remodel" component={NashRemodel}/>
-            <Route path="/professional_cars" component={ProfessionalCars}/>
-            <Route path="/chrysler_crown_imperial" component={ChryslerCrownImperial}/>
+            <Route path="/livery/professional_cars" component={ProfessionalCars}/>
+            <Route path="/livery/chrysler_crown_imperial" component={ChryslerCrownImperial}/>
         </Switch>
     );
 };

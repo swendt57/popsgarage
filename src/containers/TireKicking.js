@@ -36,8 +36,7 @@ class TireKicking extends Component {
 
                 <div className="container">
 
-                    <table className="table">
-                        <tbody>
+
 
                     {this.state.tireKickingData.map((item, index) =>
                         <PhotoWithDetail key={item.title}
@@ -48,11 +47,10 @@ class TireKicking extends Component {
                                          container_class_name="photo-detail"
                                          image_class_name="car-img"
                                          alt_text={item.title + 'example'}
-                                         link={item.link}
+                                         link={"tire_kicking/" + item.link}
                                         data_length={this.state.tireKickingData.length}
                                         index={index}/>)}
-                        </tbody>
-                    </table>
+
                 </div>
 
 
