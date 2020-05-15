@@ -20,7 +20,7 @@ const ProfessionalCars = () => {
                 <h2>Tri-State Chapter of the Professional Car Society</h2>
                 <hr/>
 
-                <div id="home-aside-container"><aside><p><strong>NOTE: For information about joining the Professional Car Society</strong>, contact Jeff Hookway, the international Membership Director at 64 Mudcut Road, Lafayette, NJ 07848. For information about joining the Tri-State Chapter, contact Chester Zygowski at 3660 Allendale Street, Pittsburgh, PA 15204. One-year dues for the International are $30 and one-year dues for the TSC are only $15. If you wish to join both at once you can send $45 to the Tri-State Chapter and they will forward the payment to the International.</p>
+                <div id="aside-container"><aside><p><strong>NOTE: For information about joining the Professional Car Society</strong>, contact Jeff Hookway, the international Membership Director at 64 Mudcut Road, Lafayette, NJ 07848. For information about joining the Tri-State Chapter, contact Chester Zygowski at 3660 Allendale Street, Pittsburgh, PA 15204. One-year dues for the International are $30 and one-year dues for the TSC are only $15. If you wish to join both at once you can send $45 to the Tri-State Chapter and they will forward the payment to the International.</p>
 
                     <p>The group is always looking for photos to feature in future calendars. If you have a car that you would like to see in their calendar in the future or for information on purchasing calendars contact Chuck Snyder II, TCS PCS, 309 N. Keel Ridge Road, Hermitage, PA 16148.</p></aside></div>
 

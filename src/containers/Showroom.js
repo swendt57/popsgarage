@@ -14,7 +14,11 @@ function assembleData() {
     return showroomArray;
 }
 
+let dataLength = 0;
+let masterIndex = -1;
+
 function getDetailCode(item) {
+    masterIndex++;
     return (
         <PhotoWithDetail key={item.title}
                          title={item.title}
@@ -23,7 +27,10 @@ function getDetailCode(item) {
                          image_folder="showroom"
                          container_class_name="photo-detail"
                          image_class_name="car-img"
-                         alt_text="A sample model from: "/>
+                         alt_text="A sample model from: "
+                         data_length={dataLength}
+                         index={masterIndex}
+                         />
     )
 }
 
@@ -34,8 +41,10 @@ class Showroom extends Component {
         super(props);
 
         this.state = {
-            showroomData: assembleData()
+            showroomData: assembleData(),
         }
+
+        dataLength = this.state.showroomData.length;
     }
 
     render () {
@@ -89,9 +98,9 @@ class Showroom extends Component {
                     <table className="table">
                         <tbody>
 
-                    {this.state.showroomData.map(item => {
-                        return item.category === "limousines" ?
-                            getDetailCode(item)
+                    {this.state.showroomData.map((item, index) => {
+                        return  item.category === "limousines" ?
+                            getDetailCode(item, item.index)
                         :
                             ""
                     })}

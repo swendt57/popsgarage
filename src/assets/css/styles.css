@@ -24,7 +24,7 @@ section {
     width: 90vw;
     padding-top: 15px;
     margin: auto;
-    padding-bottom: 50px;
+    /*padding-bottom: 20px;*/
 }
 
 /* BS OR */
@@ -39,13 +39,24 @@ aside {
     /*position: relative;*/
     font-size: .85rem;
     text-align: justify;
+    /*text-justify: none;*/
     border: 3px double black;
     padding: 5px;
     margin-left: 15px;
     /*flex-shrink: 2;*/
     /*box-sizing: border-box;*/
     background-color: #faf9e9;
+}
 
+#aside-container{
+    float: right;
+    width: 180px;
+    padding: 0;
+}
+
+.aside-img {
+    width: 150px;
+    margin-bottom: 10px;
 }
 
 h1, h2, h3, h4 {
@@ -156,6 +167,15 @@ td.photo-caption-td {
         padding: 10px;
     }
 
+    #aside-container{
+        width: 300px;
+    }
+
+    .aside-img {
+        width: 260px;
+        border: 1px solid black;
+    }
+
     td.photo-detail-td {
         text-align: justify;
     }
@@ -197,12 +217,32 @@ td.photo-caption-td {
         font-size: .95rem;
     }
 
+    #aside-container {
+        width: 350px;
+    }
+
+    .aside-img {
+        width: 310px;
+    }
+}
+
+/* styles for two column layouts */
+@media (min-width: 1024px) {
+
     .two-column {
         column-count: 2;
         column-gap: 35px;
         column-rule-style: solid;
         column-rule-color: #ccc;
         text-align: justify;
+    }
+
+    div.two-column #aside-container {
+        width: 280px;
+    }
+
+    div.two-column .aside-img {
+        width: 240px;
     }
 }
 
@@ -368,38 +408,6 @@ nav {
     width: 100%;
     /*background: yellow;*/
 }
-#home-aside-container{
-    float: right;
-    width: 180px;
-    padding: 0;
-}
-
-.lg-car-img {
-    width: 150px;
-    margin-bottom: 10px;
-}
-
-/* styles for tablet */
-@media (min-width: 768px) {
-    #home-aside-container{
-        width: 300px;
-    }
-
-    .lg-car-img {
-        width: 260px;
-    }
-}
-
-/* styles for desktop */
-@media (min-width: 992px) {
-    #home-aside-container {
-        width: 350px;
-    }
-
-    .lg-car-img {
-        width: 310px;
-    }
-}
 
 
 /*---------------Showroom and Tire Kicking---------------*/
@@ -491,18 +499,6 @@ nav {
     margin: 5px 15px 5px 0;
     float: left;
 }
-
-/*.tk-photo-detail {*/
-/*    min-height: 135px;*/
-/*    !*vertical-align: top;*!*/
-/*}*/
-
-/*.photo-car-img {*/
-/*    width: 150px;*/
-/*    border: 1px solid black;*/
-/*    margin: 5px 10px 0 0;*/
-/*    float: left;*/
-/*}*/
 
 figure {
     /*border: 1px solid black;*/
@@ -625,5 +621,50 @@ figcaption {
 
     .nash-remodel-img {
         width: 450px;
+    }
+}
+
+/*---------------Footer---------------*/
+/*  TODO fix negative margin */
+footer {
+    font-size: .75rem;
+    padding: 0;
+    margin: 20px auto;
+}
+
+footer a {
+    color: #181cb3;
+}
+
+footer a:hover {
+    color: #d9112d;
+}
+
+footer hr {
+    max-width: 80vw;
+    margin: 0 auto 10px;
+    border-color: #181cb3;
+}
+
+/* styles for tablet */
+@media (min-width: 768px) {
+    footer {
+        font-size: 0.85rem;
+    }
+
+    footer hr {
+        max-width: 50vw;
+    }
+}
+
+/* styles for desktop */
+@media (min-width: 992px) {
+    footer {
+        font-size: 0.9rem;
+    }
+
+    footer hr {
+        max-width: 40vw;
+        margin: 0 auto 10px;
     }
 }

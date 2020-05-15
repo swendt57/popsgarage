@@ -2,6 +2,21 @@ import React from "react";
 
 const PhotoAndCaption = props => {
 
+    let isLastElement = props.data_length === (props.index + 1)
+
+    function HorizontalRule() {
+        if( ! isLastElement) {
+            return (
+                <tr>
+                    <td className="hr-style">
+                        <hr/>
+                    </td>
+                </tr>
+            )
+        }
+        return null;
+    }
+
     return ( <table className="table">
             <tbody>
             <tr>
@@ -16,11 +31,7 @@ const PhotoAndCaption = props => {
                     <p>{props.description}</p>
                 </td>
             </tr>
-            <tr>
-                <td className="hr-style">
-                    <hr/>
-                </td>
-            </tr>
+            <HorizontalRule/>
 
             </tbody>
         </table>

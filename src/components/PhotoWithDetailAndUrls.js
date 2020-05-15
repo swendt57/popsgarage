@@ -3,6 +3,22 @@ import React from "react";
 
 const PhotoWithDetailAndUrls = props => {
 
+    let isLastElement = props.data_length === (props.index + 1)
+
+    function HorizontalRule() {
+        if( ! isLastElement) {
+            // console.log("data: " + props.data_length + " index: " + props.index);
+            return (
+                <tr>
+                    <td className="hr-style">
+                        <hr/>
+                    </td>
+                </tr>
+            )
+        }
+        return null;
+    }
+
     return (
                     <React.Fragment>
                         <tr>
@@ -15,11 +31,7 @@ const PhotoWithDetailAndUrls = props => {
 
                             </td>
                         </tr>
-                        <tr>
-                            <td className="hr-style">
-                                <hr/>
-                            </td>
-                        </tr>
+                        <HorizontalRule/>
                     </React.Fragment>
 
     )

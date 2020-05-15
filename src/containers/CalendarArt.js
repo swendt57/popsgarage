@@ -38,7 +38,7 @@ class CalendarArt extends Component {
 
                     <p>These images came from the kind of calendars that <strong>do</strong> get hung in Beach Bum Cove. The illustrations below are artist renditions of pre-war cars from the American independents. Back then they were all truly independent and separate automobile manufacturers and these are some of the best vehicles they offered. The calendars they were taken from were given out in the late 1990s by a large Ohio chain of "filter & lube" service outlets called FASLUBE.</p>
 
-                    {this.state.calendarData.map(item =>
+                    {this.state.calendarData.map((item, index) =>
                         <PhotoAndCaption key={item.title}
                                          title={item.title}
                                          description={item.description}
@@ -46,6 +46,8 @@ class CalendarArt extends Component {
                                          image_folder="features/calendar_art"
                                          class_name="large-img"
                                          alt_text="Drawing of a "
+                                         data_length={this.state.calendarData.length}
+                                         index={index}
                         />)
                     }
 

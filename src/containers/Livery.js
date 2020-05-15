@@ -35,7 +35,7 @@ class Livery extends Component {
                     <table className="table">
                         <tbody>
 
-                    {this.state.liveryData.map(item =>
+                    {this.state.liveryData.map((item, index) =>
                         <PhotoWithDetail key={item.title}
                                          title={item.title}
                                          description={item.description}
@@ -44,7 +44,10 @@ class Livery extends Component {
                                          container_class_name="photo-detail"
                                          image_class_name="car-img"
                                          alt_text={item.title + 'example'}
-                                         link={item.link}/>)}
+                                         link={item.link}
+                                         data_length={this.state.liveryData.length}
+                                         index={index}
+                        />)}
                         </tbody>
                     </table>
                 </div>

@@ -4,6 +4,7 @@ import './bootstrap.min.css';
 import './assets/css/styles.css';
 
 import HeaderNav from "./components/HeaderNav";
+import Footer from "./components/Footer";
 import Routes from "./routes/Routes";
 
 class App extends Component {
@@ -34,6 +35,7 @@ class App extends Component {
         <div className="App.container">
           <HeaderNav hideBanner={this.state.toggleBanner}/>
           <Routes /> {/* Put this here, otherwise page content is inside the header*/}
+          <Footer/>
         </div>
     );
   }

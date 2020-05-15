@@ -15,6 +15,9 @@ function assembleData() {
     return linksArray;
 }
 
+let dataLength = 0;
+let masterIndex = -1;
+
 function updatePlaceholders(stringToUpdate, urls) {
     for (let i = 0; i < urls.length; i++) {
         let variables = urls[i];
@@ -25,6 +28,7 @@ function updatePlaceholders(stringToUpdate, urls) {
 
 
 function getDetailCode(item) {
+    masterIndex++;
     return (
         <PhotoWithDetailAndUrls key={item.title}
                          title={item.title}
@@ -37,7 +41,10 @@ function getDetailCode(item) {
                          urls={item.urls}
                          category={item.category}
                          subcategory={item.subcategory}
-                         link={item.link}/>
+                         link={item.link}
+                         data_length={dataLength}
+                         index={masterIndex}
+        />
         )
     }
 
@@ -50,6 +57,7 @@ class Links extends Component {
             linksData: assembleData()
         }
 
+        dataLength = this.state.linksData.length;
     }
 
     render () {
