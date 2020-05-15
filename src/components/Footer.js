@@ -7,29 +7,26 @@ const Footer = props => {
 
     return (
         <footer>
-            <div className="container text-center">
+            <div className="container text-center" style={{maxWidth: "80vw"}}>
                 <p>
                 <hr/>
                 <strong>
-                    <Link to="/">Home</Link>
-                    &nbsp;||&nbsp;
+                    <Link to="/">Home </Link>
+                    |&nbsp;
                     <Link to="showroom">Showroom</Link>
-                    &nbsp;||&nbsp;
-                    <Link to="tire_kicking">Tire Kicking</Link>
-                    &nbsp;||&nbsp;
-                    <Link to="livery">The Livery</Link>
-                    &nbsp;||&nbsp;
-                    <Link to="links">Links</Link>
-                    &nbsp;||&nbsp;
-                    <Link to="library">The Library</Link>
+                    |&nbsp;
+                    <Link to="tire_kicking">Tire&nbsp;Kicking </Link>
+                    |&nbsp;
+                    <Link to="livery">The&nbsp;Livery </Link>
+                    |&nbsp;
+                    <Link to="links">Links </Link>
+                    |&nbsp;
+                    <Link to="library">The&nbsp;Library </Link>
+                    |&nbsp;
+                    <span>Site&nbsp;Map </span>
+                    |&nbsp;
+                    <span>Contact&nbsp;Us </span>
                 </strong>
-                </p>
-                <p>
-                    <strong>
-                    Site Map
-                    &nbsp;||&nbsp;
-                    Contact Us
-                    </strong>
                 </p>
             </div>
         </footer>
