@@ -36,8 +36,6 @@ class TireKicking extends Component {
 
                 <div className="container">
 
-
-
                     {this.state.tireKickingData.map((item, index) =>
                         <PhotoWithDetail key={item.title}
                                          title={item.title}

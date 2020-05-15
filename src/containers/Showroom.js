@@ -3,6 +3,9 @@ import Alert from 'react-bootstrap/Alert';
 
 import PhotoWithDetail from "../components/PhotoWithDetail";
 
+let dataLength = 0;
+let masterIndex = -1;
+
 function assembleData() {
     let data = require("../assets/data/showroom.json");
 
@@ -13,9 +16,6 @@ function assembleData() {
 
     return showroomArray;
 }
-
-let dataLength = 0;
-let masterIndex = -1;
 
 function getDetailCode(item) {
     masterIndex++;
@@ -45,6 +45,7 @@ class Showroom extends Component {
         }
 
         dataLength = this.state.showroomData.length;
+        masterIndex = -1;
     }
 
     componentDidMount() {

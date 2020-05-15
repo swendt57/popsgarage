@@ -58,6 +58,7 @@ class Links extends Component {
         }
 
         dataLength = this.state.linksData.length;
+        masterIndex = -1; //need to rest this each time
     }
 
     componentDidMount() {
