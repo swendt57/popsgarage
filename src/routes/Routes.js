@@ -15,6 +15,8 @@ import CalendarArt from "../containers/CalendarArt"
 import NashRemodel from "../containers/NashRemodel";
 import ProfessionalCars from "../containers/ProfessionalCars";
 import ChryslerCrownImperial from "../containers/ChryslerCrownImperial";
+import SitemapDisplay from "../containers/SitemapDisplay";
+import ContactUs from "../containers/ContactUs";
 
 const Routes = () => {
 
@@ -28,13 +30,16 @@ const Routes = () => {
             <Route path="/links" component={Links}/>
             <Route path="/tire_kicking/metropolitan_story" component={MetropolitanStory}/>
             <Route path="/tire_kicking/nash_rambler" component={NashRambler}/>
-            <Route path="/tire_kicking/land_cruiser" component={LandCruiser}/>
+            <Route path="/tire_kicking/land_cruiser" component={LandCruiser} exact={true}/>
             <Route path="/tire_kicking/beep_beep" component={BeepBeep}/>
             <Route path="/tire_kicking/calendar_art" component={CalendarArt}/>
-            <Route path="/nash_remodel" component={NashRemodel}/>
+            <Route path="/tire_kicking/nash_remodel" component={NashRemodel}/>
             <Route path="/livery/professional_cars" component={ProfessionalCars}/>
             <Route path="/livery/chrysler_crown_imperial" component={ChryslerCrownImperial}/>
+            <Route path="/sitemap" component={SitemapDisplay}/>
+            <Route path="/contact_us" component={ContactUs}/>
         </Switch>
+
     );
 };
 

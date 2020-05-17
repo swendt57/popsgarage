@@ -108,6 +108,12 @@ hr {
     margin: 10px auto 20px;
 }
 
+ul li {
+    margin: 5px auto;
+    list-style:none;
+    color: black;
+}
+
 td.hr-style {
     border-top: 0;
     padding: 5px;
@@ -678,4 +684,31 @@ footer hr {
         max-width: 40vw;
         margin: 0 auto 10px;
     }
+}
+
+/*------------Contact Us-------------*/
+
+.contact-container {
+    width: 98%;
+    max-width: 800px;
+    font-size: 14px;
+}
+
+#photography_inquiry input, textarea {
+    margin: 10px;
+}
+
+#photography_inquiry label {
+    vertical-align: center;
+}
+
+:required {
+    border-color: #800000;
+    border-width: 4px;
+}
+
+#loadingGIF {
+    display: none;
+    width: 25px;
+    height: 25px;
 }
