@@ -143,6 +143,10 @@ td.photo-caption-td {
     border-radius: 8px;
 }
 
+.two-column-hide {
+    display: none;
+}
+
 /* styles for tablet */
 @media (min-width: 768px) {
     body {
@@ -249,6 +253,10 @@ td.photo-caption-td {
         column-rule-style: solid;
         column-rule-color: #ccc;
         text-align: justify;
+    }
+
+    .two-column-hide {
+        display: none;
     }
 
     div.two-column #aside-container {

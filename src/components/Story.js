@@ -9,8 +9,8 @@ const Story = props => {
             <h1>{props.page_heading}</h1>
 
         <div>
-            <h2>{props.page_subheading}</h2>
-            <hr/>
+            <h2 className="two-column-hide">{props.page_subheading}</h2>
+            <hr className="two-column-hide"/>
             {props.text}
         </div>
         </section>
