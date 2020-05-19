@@ -13,20 +13,21 @@ class App extends Component {
     super(props);
 
     this.state = {
-      toggleBanner: false
+      hasNarrowScreen: false
     }
   }
 
   resize = () => {
     let isNarrowScreen = (window.innerWidth <= 550);
 
-    if (isNarrowScreen !== this.state.toggleBanner) {
-      this.setState({toggleBanner: isNarrowScreen});
+    if (isNarrowScreen !== this.state.hasNarrowScreen) {
+      this.setState({hasNarrowScreen: isNarrowScreen});
     }
   };
 
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
+    alert("resizing!")
     this.resize();
   }
 

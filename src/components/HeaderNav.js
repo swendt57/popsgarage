@@ -10,11 +10,11 @@ import $ from 'jquery';
 
 const HeaderNav = props => {
 
-    //TODO Research how to do this properly
-    if (props.toggleBanner) {
-        $(".navbar").toggleClass("beach-div");
+    if (props.hasNarrowScreen) {
+        $("#banner").toggleClass("beach-div").toggleClass("beach-div-short");
+        ;
     } else {
-        $(".navbar").toggleClass("beach-div");
+        $("#banner").toggleClass("beach-div-short").addClass("beach-div");
     }
 
     let bgDiv = {
@@ -29,7 +29,7 @@ const HeaderNav = props => {
         <header>
             <div id="header-bg" style={bgDiv}>
                 <div className="container">
-                    <Navbar sticky="top" collapseOnSelect bg="light" expand="lg" className="beach-div">
+                    <Navbar id="banner" sticky="top" collapseOnSelect bg="light" expand="lg" className="beach-div">
                         <Navbar.Brand href="/">
                             <div className="logo-wrapper">
                                 <div className="title">Pop's Garage</div>

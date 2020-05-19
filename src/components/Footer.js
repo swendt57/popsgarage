@@ -22,7 +22,7 @@ const Footer = props => {
                     |&nbsp;
                     <Link to="/library">The&nbsp;Library </Link>
                     |&nbsp;
-                    <Link to="/sitemap">Site&nbsp;Map </Link>
+                    <Link to="/sitemap">Site&nbsp;Map </Link> 
                     |&nbsp;
                     <Link to="/contact_us">Contact&nbsp;Us </Link>
                 </strong>

@@ -29,7 +29,7 @@ section {
 
 /* BS OR */
 .container {
-    max-width: 90vw;
+    max-width: 100vw;
     margin: auto;
     padding: 0;
     z-index: 0;
@@ -323,9 +323,16 @@ button.navbar-toggler.collapsed {
 }
 
 .beach-div {
-    background-image: url("../../assets/images/banner-new.jpg"), url("../../assets/images/bg.jpg");
-    background-size: 441px 119px, 20px 119px;
+    background-image: url("../../assets/images/banner-new.png"), url("../../assets/images/bg.jpg");
+    background-size: 440px 119px, 20px 119px;
     background-position-x: 120px;
+    background-repeat: no-repeat, repeat;
+}
+
+.beach-div-short {
+    background-image: url("../../assets/images/banner-tree.png"), url("../../assets/images/bg.jpg");
+    background-size: 217px 119px, 20px 119px;
+    background-position-x: 105px;
     background-repeat: no-repeat, repeat;
 }
 
