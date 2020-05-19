@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 import './bootstrap.min.css';
 import './assets/css/styles.css';
@@ -31,9 +32,13 @@ class App extends Component {
   }
 
   render() {
+    const en= runtimeEnv();
+
     return (
+
         <div className="App.container">
-          <HeaderNav hideBanner={this.state.toggleBanner}/>
+          <code>Runtime env var example: {env.REACT_APP_HELLO}</code>
+          <HeaderNav hideBanner={this.state.hasNarrowScreen}/>
           <Routes /> {/* Put this here, otherwise page content is inside the header*/}
           <Footer/>
         </div>
