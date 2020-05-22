@@ -47,7 +47,8 @@ class TireKicking extends Component {
                                          alt_text={item.title + 'example'}
                                          link={"tire_kicking/" + item.link}
                                         data_length={this.state.tireKickingData.length}
-                                        index={index}/>)}
+                                        index={index}
+                        />)}
 
                 </div>
 

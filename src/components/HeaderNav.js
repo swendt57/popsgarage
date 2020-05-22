@@ -13,7 +13,7 @@ const HeaderNav = props => {
     if (props.hasNarrowScreen) {
         $("#banner").toggleClass("beach-div").toggleClass("beach-div-short");
     } else {
-        $("#banner").toggleClass("beach-div-short").addClass("beach-div");
+        $("#banner").toggleClass("beach-div-short").addClass("beach-div"); //TODO understand why addClass works and not toggleClass
     }
 
     let bgDiv = {

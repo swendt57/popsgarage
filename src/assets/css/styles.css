@@ -75,6 +75,7 @@ h2 {
     font-size: 1.7rem;
     color: black;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 h3, h4 {
@@ -255,6 +256,11 @@ td.photo-caption-td {
         text-align: justify;
     }
 
+    /* on some two-column pages we need to move the first sub-heading from the top into the column area */
+    .one-column-hide {
+        display: none;
+    }
+
     .two-column-hide {
         display: none;
     }
@@ -277,6 +283,18 @@ td.photo-caption-td {
     width: 100%;
     height: 119px;
 }
+
+/*TODO the reason the right side of the nav does not pull in from the right is that it is fixed.
+   This along with another fixed object in the header are having unintended issues amd should be looked into*/
+
+/*.header-container {*/
+/*    width: 85%;*/
+/*}*/
+
+/*#banner {*/
+/*    width: 90%;*/
+/*    margin: 0 auto;*/
+/*}*/
 
 .title {
     font-family: "Londrina Solid", sans-serif;
