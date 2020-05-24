@@ -1,10 +1,7 @@
 import React from "react";
 
-import $ from "jquery";
-
 
 class SitemapDisplay extends React.Component {
-
 
     componentDidMount() {
         window.scrollTo(0, 0);

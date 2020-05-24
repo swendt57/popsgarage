@@ -1,32 +1,78 @@
-import React, {Component} from "react";
+import React from 'react';
+import emailjs from 'emailjs-com';
 
-class ContactUs extends Component {
+import $ from 'jquery';
 
-    constructor(props) {
-        super(props);
+// import './ContactUs.css';
 
+export default function ContactUs() {
+
+    (function(){
+        emailjs.init("user_kKeBaBdESQNzKvoWXY5Pg");
+    })();
+
+    function showLoading() {
+        $("#loadingGIF").show();
     }
 
-    componentDidMount() {
-        window.scrollTo(0, 0)
+    function sendEmail(e) {
+        e.preventDefault();
+        console.log('pause');
+        e.target.elements.contact_number.value = Math.random() * 100000 | 0;
+        showLoading();
+        emailjs.sendForm("default_service", "pops_garage_inquiry", e.target)
+            .then((result) => {
+                console.log("Email sent");
+                window.location="/contact_us/thank_you";
+            }, (error) => {
+                console.log("Email error: " + error.text);
+                window.location="/contact_us/email_error";
+            });
     }
 
-    render() {
-        return (
+    return (
+        <section>
+            <div className="container contact-container">
 
-            <section>
-                <div className="container contact-container">
+                <h1>Contact Us</h1>
 
-                    <h1 className="pageHead">Contact Us</h1>
+                <h2>Thank you for your interest in Pop's Garage</h2>
 
-                    <h2>Coming Soon!</h2>
+                <h4>How can we help you?</h4>
+
+                <div className="text-center">
+
+                <form id="inquiry_form" className="contact-form" onSubmit={sendEmail}>
+                    <input type="hidden" name="contact_number" />
+
+                    <p>
+                        <label className="form-label text-left">Name:* <input type="text" name="name" required /></label>
+                    </p>
+
+                    <p>
+                        <label className="form-label text-left">Email:* <input type="email" name="email" required /></label>
+                    </p>
+
+                    <p>
+                        <label className="form-label text-left">Phone: <input type="tel" name="phone" /></label>
+                    </p>
+
+                    <p style={{alignContent: "top"}}>
+                        <label className="form-label text-left">How can we help you?* <textarea name="comments"required /></label>
+                    </p>
+
+                    <p>* = required</p>
+
+                    <input type="submit" className="btn btn-primary" value="Send"/>
+                    <img id="loadingGIF" src="https://media.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.gif" alt="Spinning animated GIF"/>
+                    <input type="reset" className="btn btn-secondary" value="Reset Form"/>
+
+                </form>
 
                 </div>
 
-            </section>
-        )
-    }
+            </div>
+
+        </section>
+    );
 }
-
-
-export default ContactUs
