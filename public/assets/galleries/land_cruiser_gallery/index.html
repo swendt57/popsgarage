@@ -9,39 +9,27 @@
 
     <title>Studebaker Land Cruiser</title>
 
+    <!-- This must remain at the top of the page -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<script>
-    function goBack() {
-        window.history.back()
-    }
-</script>
+<script src="../gallery_scripts.js"></script>
+
 <div style="background-color: black;">
     <button class="btn btn-success" onclick="goBack()">Back to the Land Cruiser story</button>
 </div>
 
 <section>
-    <div id="gallery-content">
-        <div id="juicebox-parent">
+
             <!--START JUICEBOX EMBED-->
             <script src="jbcore/juicebox.js"></script>
-            <script>
-                let height = window.innerHeight - 37;
 
-                new juicebox({
-                    containerId: 'juicebox-container',
-                    backgroundColor: "black",
-                    galleryHeight: height,
-                    galleryWidth: '100%'
-                });
-
-            </script>
-            <div id="juicebox-container"></div>
+            <div id="juicebox-content">
+                <div id="juicebox-container"></div>
+            </div>
             <!--END JUICEBOX EMBED-->
 
-        </div>
-
-    </div>
 </section>
 
 </body>

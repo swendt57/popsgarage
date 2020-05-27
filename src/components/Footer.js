@@ -2,10 +2,10 @@ import React from "react";
 
 import {Link} from "react-router-dom";
 
-const Footer = props => {
+const Footer = (props) => {
 
     return (
-        <footer>
+        <footer id="footer-container">
             <div className="container text-center" style={{maxWidth: "80vw"}}>
                 <hr/>
                 <p>

@@ -26,6 +26,9 @@
 	showSplashPage="never"
 	imageNavPosition="stage"
 	imageNavPadding="50"
+	backgroundColor="black"
+	galleryHeight="100%"
+	galleryWidth="100%"
 >
 
   <image imageURL="images/metro1.jpg"

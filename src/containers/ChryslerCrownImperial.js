@@ -28,6 +28,10 @@ const ChryslerCrownImperial = () => {
                         </aside>
                     </div>
 
+                    <p><a
+                        href={'/livery/chrysler_crown_imperial/gallery'}><strong>Photo
+                        Gallery</strong></a></p>
+
                     <p><strong>Bob Lasher and Bob Wagner are long-time members of Great Autos of Yesteryear, one of the
                         largest auto clubs in California. They, and their classic cars, live on a mountain top in Jamul,
                         east of San Diego. This is the first of a series featuring the fabulous cars in their
@@ -87,7 +91,7 @@ const ChryslerCrownImperial = () => {
                         bestowed on a truly custom vehicle of this era. It is indeed a living room on wheels.</p>
 
                     <p><a
-                        href={window.location.origin + '/assets/galleries/chrysler_crown_imperial_gallery/index.html'}><strong>Photo
+                        href={'/livery/chrysler_crown_imperial/gallery'}><strong>Photo
                         Gallery</strong></a></p>
                 </div>
 

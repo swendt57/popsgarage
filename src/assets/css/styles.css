@@ -109,10 +109,17 @@ hr {
     margin: 10px auto 20px;
 }
 
-ul li {
+li {
     margin: 5px auto;
-    list-style:none;
+    list-style: none;
+}
+
+ul.inner-list a {
     color: black;
+}
+
+ul.inner-list a:hover {
+    color: #d9112d;
 }
 
 td.hr-style {
@@ -383,10 +390,10 @@ nav {
     opacity: 0;
 }
 
-.navbar-hide {
-    pointer-events: none;
-    opacity: 0;
-}
+/*.navbar-hide {*/
+/*    pointer-events: none;*/
+/*    opacity: 0;*/
+/*}*/
 
 /* BS OR */
 .navbar-collapse {
@@ -731,7 +738,9 @@ footer hr {
 .form-label {
     font-weight: bold;
     vertical-align: center;
-    width: 80vw;
+    width: 80%;
+    /*margin-left: 25%;*/
+
 }
 
 .form-label input,
@@ -745,3 +754,16 @@ footer hr {
     width: 25px;
     height: 25px;
 }
+
+/*TESTING*/
+/*#galleryIframe {*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*    height: 100%;*/
+/*    border: none;*/
+
+/*    display: block;*/
+/*    width: 100%;*/
+/*    overflow-y: auto;*/
+/*    overflow-x: hidden;*/
+/*}*/
