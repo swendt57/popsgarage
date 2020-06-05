@@ -5,7 +5,7 @@
 	showSmallBackButton="true"
 	backButtonPosition="top"
 	backButtonText="⇦ Back to the story"
-	backButtonUrl="/tire_kicking/nash_rambler"
+	backButtonUrl="javascript: goBack();"
 	enableAutoPlay="true"
 	autoPlayOnLoad="true"
 	displayTime="4"

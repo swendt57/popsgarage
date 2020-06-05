@@ -1,6 +1,6 @@
+
 function goBack() {
-    // window.history.back()
-    window.location = "/livery/chrysler_crown_imperial";
+    window.history.back();
 }
 
 function doLayout() {

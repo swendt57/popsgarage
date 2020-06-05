@@ -5,7 +5,7 @@
 	showSmallBackButton="true"
 	backButtonPosition="top"
 	backButtonText="⇦ Back to the story"
-	backButtonUrl="/livery/professional_cars"
+	backButtonUrl="javascript: goBack();"
 	enableAutoPlay="true"
 	autoPlayOnLoad="true"
 	displayTime="4"

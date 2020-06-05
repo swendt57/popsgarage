@@ -1,8 +1,6 @@
 import React from "react";
-import {Link} from 'react-router-dom';
 
 import Story from "../components/Story";
-import Gallery from '../components/Gallery';
 
 import $ from "jquery";
 
