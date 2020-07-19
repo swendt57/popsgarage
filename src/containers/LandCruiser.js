@@ -14,7 +14,11 @@ const LandCruiser = () => {
         <React.Fragment>
             <div className="two-column">
 
-                <p><a href={'/tire_kicking/land_cruiser/gallery'}><strong>Photo Gallery</strong></a></p>
+                {/*<p><a href={'/tire_kicking/land_cruiser/gallery'}><strong>Photo Gallery</strong></a></p>*/}
+
+                <p>
+                    <a href={window.location.origin + '/assets/galleries/land_cruiser_gallery/index.html'}><strong>Studebaker Land Cruiser</strong></a>
+                </p>
 
                 <p><a href={'/tire_kicking/land_cruiser/gallery'}><img src={window.location.origin + '/assets/images/features/land_cruiser/Stude101crop.jpg'} className="feature-img-left" alt="Close-up of the right headlight"/></a>Coincident with the end of World War II, I started high school and my dad acquired his brother's 1935 Chevrolet. It seemed very dull and dowdy compared to other kids' family cars. There were no cars at school as one couldn't get a driver's license in New York City until the impossibly old age of eighteen. So, a lot of showroom shopping was done, usually with the willing accompaniment of my dad (a real car buff). However, there wasn't much to see at the dealers since cars were at a premium and were delivered (at an inflated price) to the lucky customers as soon as shipment was received.</p>
 

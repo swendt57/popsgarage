@@ -1,5 +1,6 @@
 import React from "react";
 import Story from "../components/Story";
+import $ from "jquery";
 
 
 const mainText =
@@ -59,9 +60,14 @@ class ProfessionalCars extends React.Component {
     };
 
     componentDidMount() {
+        $(".two-column-head").hide(); //Needs to start off hidden
         window.addEventListener("resize", this.resize.bind(this));
         this.resize();
     }
+
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //     alert("update: " + this.state.needsTwoColumns);
+    // }
 
     render() {
 

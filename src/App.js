@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import './bootstrap.min.css';
 import './assets/css/styles.css';
+import './assets/css/library.less';
 
 import HeaderNav from "./components/HeaderNav";
 import Footer from "./components/Footer";
