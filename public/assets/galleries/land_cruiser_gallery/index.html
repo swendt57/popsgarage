@@ -17,12 +17,51 @@
 
 <section>
 
+    <script src="jbcore/juicebox.js"></script>-->
+
+    <div id="gallery-content">
+        <div id="juicebox-parent">
             <!--START JUICEBOX EMBED-->
             <script src="jbcore/juicebox.js"></script>
+            <script>
+                let height = window.innerHeight - 37;
 
-            <div id="juicebox-content">
-                <div id="juicebox-container"></div>
-            </div>
+                new juicebox({
+                    containerId: 'juicebox-container',
+                    backgroundColor: "black",
+                    galleryHeight: height,
+                    galleryWidth: '100%'
+                });
+
+            </script>
+            <div id="juicebox-container"></div>
+            <!--END JUICEBOX EMBED-->
+
+        </div>
+
+    </div>
+
+            <!--START JUICEBOX EMBED-->
+
+<!--    <script src="jbcore/juicebox.js"></script>-->
+<!--    <script>-->
+<!--        let height = window.innerHeight - 37;-->
+
+<!--        new juicebox({-->
+<!--            containerId: 'juicebox-container',-->
+<!--            backgroundColor: "black",-->
+<!--            galleryHeight: height,-->
+<!--            galleryWidth: '100%'-->
+<!--        });-->
+
+<!--    </script>-->
+<!--    <div id="juicebox-container"></div>-->
+
+<!--            <script src="jbcore/juicebox.js"></script>-->
+
+<!--            <div id="juicebox-content">-->
+<!--                <div id="juicebox-container"></div>-->
+<!--            </div>-->
             <!--END JUICEBOX EMBED-->
 
 </section>
